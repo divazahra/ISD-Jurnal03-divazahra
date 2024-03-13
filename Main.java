@@ -7,11 +7,12 @@ public class Main {
 
         while (true) {
             System.out.println("\nMenu:");
-            System.out.println("1. Input Buku");
+            System.out.println("1. Tambah Buku");
             System.out.println("2. Hapus Buku");
             System.out.println("3. Cetak Daftar Buku");
-            System.out.println("4. Input data sesuai indeks");
+            System.out.println("4. input data sesuai indeks");
             System.out.println("5. Hapus Data sesuai judul buku");
+            System.out.println("6. Keluar");
             System.out.print("Pilih operasi: ");
 
             int pilihan = scanner.nextInt();
@@ -57,8 +58,13 @@ public class Main {
                     linkedList.deleteNodeByTitle(judulHapus);
                     break;
 
+                case 6:
+                    System.out.println("Keluar dari program. Sampai jumpa!");
+                    System.exit(0);
+                    break;
+
                 default:
-                    System.out.println("Pilihan tidak valid.");
+                    System.out.println("Pilihan tidak valid. Silakan masukkan angka 1-6.");
             }
         }
     }
